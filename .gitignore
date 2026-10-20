@@ -1,0 +1,30 @@
+# --- C++ / Code::Blocks build artifacts ---
+bin/
+obj/
+*.o
+*.obj
+*.exe
+*.out
+*.layout
+*.depend
+*.cbTemp
+
+# --- generated at runtime (reference copies live in results/) ---
+src/data/path_result.csv
+
+# --- MATLAB ---
+*.asv
+*.m~
+*.autosave
+slprj/
+
+# --- SolidWorks temporary / lock files ---
+~$*
+*.SLDLFP
+
+# --- OS / editor ---
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
