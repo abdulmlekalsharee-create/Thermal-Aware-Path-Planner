@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="ThermalAwarePlanner" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/thermal_planner" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add option="-std=c++17" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/thermal_planner" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-std=c++17" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-Wextra" />
+			<Add option="-std=c++17" />
+			<Add directory="." />
+		</Compiler>
+		<Unit filename="main.cpp" />
+		<Unit filename="thermal_grid.csv" />
+		<Unit filename="Geometry/Point3D.h" />
+		<Unit filename="Geometry/Point3D.cpp" />
+		<Unit filename="Thermal/ThermalNode.h" />
+		<Unit filename="Thermal/ThermalNode.cpp" />
+		<Unit filename="Thermal/ThermalMap.h" />
+		<Unit filename="Thermal/ThermalMap.cpp" />
+		<Unit filename="Environment/Obstacle.h" />
+		<Unit filename="Environment/Obstacle.cpp" />
+		<Unit filename="Environment/Environment.h" />
+		<Unit filename="Environment/Environment.cpp" />
+		<Unit filename="Graph/GraphNode.h" />
+		<Unit filename="Graph/GraphNode.cpp" />
+		<Unit filename="Graph/Graph.h" />
+		<Unit filename="Graph/Graph.cpp" />
+		<Unit filename="Planner/CostFunction.h" />
+		<Unit filename="Planner/DistanceCost.h" />
+		<Unit filename="Planner/DistanceCost.cpp" />
+		<Unit filename="Planner/ThermalCost.h" />
+		<Unit filename="Planner/ThermalCost.cpp" />
+		<Unit filename="Planner/AStar.h" />
+		<Unit filename="Planner/AStar.cpp" />
+		<Unit filename="IO/CSVReader.h" />
+		<Unit filename="IO/CSVReader.cpp" />
+		<Unit filename="IO/CSVWriter.h" />
+		<Unit filename="IO/CSVWriter.cpp" />
+		<Unit filename="IO/ThermalDataReader.h" />
+		<Unit filename="IO/ThermalDataReader.cpp" />
+		<Extensions>
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
